@@ -1,0 +1,205 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: url(fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 10vh;
+  background-color: #2d2d2f;
+}
+
+.bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  font-size: 1.1rem;
+  gap: 6px;
+  color: #2d2d2f;
+  background-color: #ececf6;
+  font-weight: bold;
+}
+
+.boton {
+  padding: 0;
+  transform: scale(0.8);
+  width: 0px;
+  height: 0px;
+  border-top: 0;
+  border-bottom: 10px solid black;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  margin-left: 5px;
+  margin-bottom: 2px;
+}
+
+.contraboton {
+  transform: scale(0.8);
+  width: 0px;
+  height: 0px;
+  border-bottom: 0px;
+  border-top: 10px solid black;
+  border-right: 7px solid transparent;
+  border-left: 7px solid transparent;
+  margin-left: 5px;
+}
+
+.viewbar {
+  background-color: #d6d2e2;
+}
+
+.hidenopcions {
+  transition: all 100ms;
+  height: 1px;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: transparent;
+}
+
+.opcions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #d6d2e2;
+  font-weight: 300;
+  color: #2d2d2f;
+  height: 115px;
+}
+.opcions span {
+  padding: 5px 0;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid #9b9b9b;
+  transition: all 200ms;
+}
+
+.touch {
+  background-color: gray;
+  color: #f0e6e6;
+  overflow: scroll;
+  overflow: auto;
+  display: flex;
+  column-gap: 25px;
+  padding: 10px 25px;
+}
+
+header {
+  font-size: 3rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  color: #e7ecf0;
+  padding-left: 20px;
+}
+
+.box {
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  background-color: #333333;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  color: #cecece;
+  font-size: 1.4rem;
+  gap: 100px;
+  transition: all 200ms;
+  overflow: auto;
+}
+.box div {
+  margin-left: 20px;
+}
+
+.hidenbox {
+  transform: translateX(-100%);
+  transition: all 200ms;
+}
+
+.galery {
+  overflow: hidden;
+  display: flex;
+  width: min(960px, 95vw);
+  margin: 0 auto;
+  position: relative;
+}
+.galery img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.photos {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: min(60px, 3vw) 0;
+  position: relative;
+}
+
+.flecha {
+  position: absolute;
+  border: 0;
+  border-radius: 2px;
+  padding: 20px 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transform: scaleY(1.5);
+  color: gray;
+  background-color: rgba(226, 226, 226, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flecha:hover {
+  cursor: pointer;
+}
+
+#left {
+  top: calc(50% - 30px);
+  left: 0;
+}
+
+#rigth {
+  top: calc(50% - 30px);
+  right: 0;
+}
+
+.img {
+  transition: all 1000ms;
+}
+
+.photocircule {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: rgba(179, 179, 179, 0.9);
+  transition: all 500ms;
+}
+
+#over {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  bottom: 5%;
+  left: calc(50% - 45px);
+}
+
+.photomarcado {
+  width: 30px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
